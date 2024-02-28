@@ -10,14 +10,18 @@ import java.util.Scanner;
 public class Hw0228_3 {
 	public static void main(String[] args) {
 		
-		int su1, su2, tot;
+		int i, su1 = 0, tot = 0;
 				
 		Scanner sc= new Scanner(System.in);
 		
-		System.out.print("두개의 숫자 중 첫번째 숫자를 입력해주세요!  ");
+		System.out.print("두자리 숫자를 입력해주세요!  ");
 		su1 = sc.nextInt();
 		
-		System.out.print("두개의 숫자 중 두번째 숫자를 입력해주세요!  ");
-		su2 = sc.nextInt();
+		// while ( < 1)
+		
+		// 한줄에 5개씩 출력하는 프로그램
+		 
 	}
+
 }
+
