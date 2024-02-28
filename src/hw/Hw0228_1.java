@@ -13,9 +13,9 @@ public class Hw0228_1 {
 		int	cnt5 = 0, tot5 = 0;
 		int fin = 0;
 		
-		//반복문
-		while(i < 100) {
-			i++;
+		//반복문 while
+		while(i <= 100) {
+			i++; //i가 증가하면서 실행문 실행
 			if(i % 2 == 0) {
 				cnt2++;
 				tot2 += i;
@@ -27,7 +27,7 @@ public class Hw0228_1 {
 			else if(i % 5 == 0) {
 				cnt5++;
 				tot5 += i;
-			}
+			}//cnt, tot가 이해가 안됨
 		}
 		
 		System.out.println("2의 배수의 갯수 : "+cnt2+" 3의 배수의 갯수 : "+cnt3+" 5의 배수 갯수 : "+cnt5+" " );
