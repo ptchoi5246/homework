@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //1번 : 수를 입력받아서 홀수 인지 짝수인지를 판별하시오.
 
-public class Hw0227_1review {
+public class Hw0227_1a {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		

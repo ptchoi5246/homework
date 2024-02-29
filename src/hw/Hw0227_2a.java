@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //2번 : 두개의 수를 각각 입력받아서 두개의 수중, 큰수와 작은수를 각각 출력해 주시오.
 
-public class Hw0227_2review {
+public class Hw0227_2a {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		

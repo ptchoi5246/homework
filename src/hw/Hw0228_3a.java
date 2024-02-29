@@ -7,7 +7,7 @@ import java.util.Scanner;
 한줄에 5개씩 출력하는 프로그램을 만드시오.
  */
 
-public class Hw0228_3_1 {
+public class Hw0228_3a {
 	public static void main(String[] args) {
 		
 		int num, i = 0, sub, col = 0;

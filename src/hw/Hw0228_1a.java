@@ -5,7 +5,7 @@ package hw;
 이때 2의 배수의 합과 3의 배수의 합을 더해서 5의 배수의 합을 뺀 결과도 마지막에 출력하시오.
 */
 
-public class Hw0228_1_1 {
+public class Hw0228_1a {
 	public static void main(String[] args) {
 		
 		int i = 0, cnt2 = 0, tot2 = 0;

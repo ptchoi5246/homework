@@ -5,7 +5,7 @@ import java.util.Scanner;
 //3번 : 1개의 수를 입력받아서 그 수가 2의 배수인지, 3의 배수인지, 5의 배수인지를 각각 구분해서 출력하시오.
 //(예시로, 10은 2의 배수이면서 5의 배수가 될수 있도록 출력처리합니다.)
 
-public class Hw0227_3review {
+public class Hw0227_3a {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
