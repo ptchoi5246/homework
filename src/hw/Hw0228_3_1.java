@@ -10,22 +10,29 @@ import java.util.Scanner;
 public class Hw0228_3_1 {
 	public static void main(String[] args) {
 		
-		int su1, c = 0;
+		int num, i = 0, sub, col = 0;
 				
 		Scanner sc= new Scanner(System.in);
 		
 		System.out.print("두자리 숫자를 입력해주세요!  ");
-		su1 = sc.nextInt();
+		num = sc.nextInt();
 		
-		while(su1 > 0) {
-			c++;
-			System.out.print(su1 + " ");
-			su1--;
-			if(c == 5) {
-				System.out.println();
-				c = 0;
+		if(num >=10 && num <=99) {
+			while(i<num) {
+				sub = num - i;
+				if (col < 4) {
+					System.out.print(sub + " "); //세로 출력을 위해 ln 생략
+					col++;
+				} else {
+					System.out.println(sub);
+					col = 0;
+				}
+				
+				i++;
 			}
 		}
+		else System.out.println("숫자를 잘못 입력하셨습니다.");
+		
 		sc.close();
 				 
 	}

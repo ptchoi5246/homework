@@ -20,7 +20,7 @@ public class Hw0228_2_1 {
 		System.out.print("두번째 숫자를 입력해주세요!  ");
 		su2 = sc.nextInt();
 		
-		//temp 사용
+		//temp 사용 :: 두 수 중 앞의 수가 작도록 처리하기 위해서 두 수의 변경 참조
 		if(su1 > su2) {
 			temp = su1;
 			su1 = su2;
