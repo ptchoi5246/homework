@@ -1,4 +1,4 @@
-package hw;
+package hw0228;
 
 import java.util.Scanner;
 /*
@@ -6,7 +6,7 @@ import java.util.Scanner;
 이때 5개항씩 그 결과를 출력시켜주시오.(마지막에 남은 값이 있으면 그합까지도 마지막에 출력할수 있어야함)
 여기서 두개의 숫자는 임의의 숫자를 입력할수 있기에 첫번째숫자가 더 큰 숫자가 먼저 입력될수도 있다.
  */
-public class Hw0228_2 {
+public class Hw0228_2c {
 	public static void main(String[] args) {
 		
 		int su1 = 0, su2 = 0, tot = 0;
