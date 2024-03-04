@@ -19,36 +19,35 @@ public class Hw0229_5a {
 			System.out.println("선택>");
 			choice = sc.nextInt();
 		
-				switch(choice) {
-					case 1:
-						System.out.println("예금액을 입력하세요.  ");
-						int deposit = sc.nextInt();
-						balance = balance + deposit;
-						System.out.println("예금이 완료되었습니다. 잔액은 "+balance+"원 입니다.");
-						break;
+			switch(choice) { //switch 사용해서 case 1-4
+				case 1:
+					System.out.println("예금액을 입력하세요.  ");
+					int deposit = sc.nextInt();
+					balance = balance + deposit;
+					System.out.println("예금이 완료되었습니다. 잔액은 "+balance+"원 입니다.");
+					break; //while문, case문 구분하기! 49번을 빠져나간다.
 			
-					case 2:
-						System.out.println("출금액을 입력하세요.  ");
-						int withdraw = sc.nextInt();
-							if(withdraw > balance) {
-								System.out.println("잔액이 부족합니다. 현재 잔액은 "+balance+"원 입니다.");
-							}
-							else if(withdraw <= balance) {
-								balance = balance - withdraw;
-								System.out.println("출금이 완료되었습니다. 현재 잔액은 "+balance+"원 입니다.");
-							}
-							break;	
+				case 2:
+					System.out.println("출금액을 입력하세요.  ");
+					int withdraw = sc.nextInt();
+					if(withdraw > balance) { //잔액 출금액 조건
+						System.out.println("잔액이 부족합니다. 현재 잔액은 "+balance+"원 입니다.");
+					}
+					else //if(withdraw <= balance) {
+						balance = balance - withdraw; // balance -= withdraw;
+						System.out.println("출금이 완료되었습니다. 현재 잔액은 "+balance+"원 입니다.");
+					break;	
 				
-					case 3:
-						System.out.println("현재 잔액은 "+balance+"원 입니다.");
-						break;
+				case 3:
+					System.out.println("현재 잔액은 "+balance+"원 입니다.");
+					break;
 			
-					case 4:
-						System.out.println("감사합니다. 안녕히 가세요.");
-						break;	
+				case 4:
+					System.out.println("감사합니다. 안녕히 가세요.");
+					break;	
 				}
-				if(choice == 4) break;
+				if(choice == 4) break; //while 전체 빠져나간다, break; 대신에 false
 			}				
 		sc.close();
 	}
-}
+} //블럭 맞추기 조심하기!!!
