@@ -9,13 +9,23 @@ package hw0304;
  */
 public class Hw0304_1 {
 	public static void main(String[] args) {
-		int i = 0, cnt = 0;
 		
-		while(i<100) {
-			System.out.println(i);
-			if(i % 10 == 0) {
-				cnt++;
+		
+		for(int i=1; i<=100; i++) {
+			int su1 = i/10; //i를 10으로 나눈 몫 : 십의 자리
+			int su2 = i%10; //i를 10으로 나눈 나머지 : 일의 자리
+			
+			if (su1 == 3 || su1 == 6 || su1 == 9) { //or 셋 중의 하나, 십의 자리가 3, 6, 9
+				if(su2 == 3 || su2 == 6|| su2 == 9) //or 셋 중의 하나, 1의 자리가 3, 6, 9 
+					System.out.print("짝짝 ");
+				else System.out.print("짝 ");				
 			}
+			else {
+				if(su2 == 3 || su2 == 6|| su2 == 9) //or 셋 중의 하나, 1의 자리가 3, 6, 9
+					System.out.print("짝 ");
+				else System.out.print(i + " ");
+			}
+			if (i%10 ==0) System.out.print("\n");
 		}
 	}
-}
+}	
