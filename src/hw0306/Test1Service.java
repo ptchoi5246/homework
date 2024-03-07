@@ -1,7 +1,8 @@
 package hw0306;
 
 public class Test1Service {
-	
+
+	//비즈니스 로직 :: 사용자 지원
 	//직급코드 소문자, 대문자
 	String codeCheck(String code) {
 		if((code.toUpperCase()).equals("B")) return "부장";
