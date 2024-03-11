@@ -1,17 +1,20 @@
 package hw0311;
 
 public interface LunchMenu  {
-
-	void rice();
-	void bulgogi();
-	void tobu();
-	void miyeok();
-	void yoghurt();
-	void banana();
-	void milk();
-	void almond();
+	// 가격 : 상수 - 전체 대문자
+	int RICE = 500;
+	int BULGOGI = 2000;
+	int TOFU = 1000;
+	int SEAWEED = 1000;
+	int YOGURT = 800;
+	int BANANA = 500;
+	int MILK = 500;
+	int ALMOND = 700;
 	
-	default void name(String name) {
-		System.out.println(name + " 의 식대 계산 입니다.");
-	}
-}
+	void MenuPrice(int tot);	
+}	
+	
+	
+	
+	
+
