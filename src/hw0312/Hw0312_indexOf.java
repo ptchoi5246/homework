@@ -21,18 +21,18 @@ public class Hw0312_indexOf {
 		
 		
 		while(true) {
-		System.out.println("찾고 싶은 단어를 입력하세요.   0.종료");
-		String findWord = sc.next();
-		if(msg.indexOf(findWord) >= 0) {
-			System.out.println("찾고 싶은 단어 '" + findWord +"' 은/는 " + (msg.indexOf(findWord)+1) + "번째 위치하고 있습니다.");
-		} else break;
-		
-				
-		int cnt = 0; //단어의 총 등장 횟수
-		
-		cnt++;
-				
-		System.out.println("찾고 싶은 단어 '" + findWord + "' 은/는 의 총 등장횟수 : " + cnt);		
+			System.out.println("찾고 싶은 단어를 입력하세요.   0.종료");
+			String findWord = sc.next();
+			if(msg.indexOf(findWord) >= 0) {
+				System.out.println("찾고 싶은 단어 '" + findWord +"' 은/는 " + (msg.indexOf(findWord)+1) + "번째 위치하고 있습니다.");
+			} else break;
+			
+					
+			int cnt = 0; //단어의 총 등장 횟수
+			
+			cnt++;
+					
+			System.out.println("찾고 싶은 단어 '" + findWord + "' 은/는 의 총 등장횟수 : " + cnt);		
 		}
 		System.out.println("프로그램이 종료되었습니다. 감사합니다 :)");
 		sc.close();		
