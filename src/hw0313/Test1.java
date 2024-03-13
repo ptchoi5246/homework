@@ -1,35 +1,37 @@
 package hw0313;
 
-/*
-  콘솔을 통해서 파일명을 입력받은후, 입력받은 파일의 성격을 구해서 화면에 출력하시오.
-  예) 화일명을 입력하세요? abc.jpg
-     abc.jpg ==> 그림파일
-     계속할까요?(Y/N) Y
-     ================================
-     화일명을 입력하세요? atom.txt
-     atom.txt ==> 텍스트파일
-     계속할까요?(Y/N) y
-     ================================
-     화일명을 입력하세요? mbc.zip
-     mbc.zip ==> 압축파일
-     계속할까요?(Y/N) Y
-     ================================
-     화일명을 입력하세요? sbs.xlsx
-     sbs.xlsx ==> 엑셀파일
-     계속할까요?(Y/N) y
-     ================================
-     화일명을 입력하세요? seoul.hwp
-     seoul.hwp ==> 한글파일
-     계속할까요?(Y/N) Y
-     ================================
-     화일명을 입력하세요? busan.gif
-     busan.hwp ==> 그림파일
-     계속할까요?(Y/N) n
-     ================================
-     수고하셨습니다.
-*/
+import java.util.Scanner;
+
 public class Test1 {
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
+		String[] engExt = {"jpg","txt","zip","xlsx","hwp","gif"};
+		String[] korExt = {"그림파일","텍스트파일","압축파일","엑셀파일","한글파일","그림파일"};
+			
+		while(true) {
+			System.out.println("파일명을 입력하세요~!  ");
+			String file = sc.next();
+			
+			String fileExt = file.substring(file.indexOf(".")+1);
+			//.substring(int startIndex) startIndex에서 끝까지 문자열 발췌
+			String fileType = "";
+			
+			for(int i=0; i<engExt.length; i++) {
+				if(fileExt.equals(engExt[i])) {
+					fileType = korExt[i];
+					break;
+				}
+			}
+			System.out.println(file + "===>" + fileType);
+			
+			System.out.println("계속 할까요? (Y/N)");
+			String yn = sc.next();
+			if(yn.toUpperCase().equals("N")) break;
+			
+			System.out.println("==============================");
+		}
+		System.out.println("감사합니다. 안녕히 가세요 :)");
+		sc.close();
 	}
 }
