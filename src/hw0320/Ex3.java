@@ -11,7 +11,7 @@ public class Ex3 {
 		TreeSet<Integer> treeSet = new TreeSet<>();
 		//Set<Integer> treeSet = new TreeSet<>();
 		
-		for(int i=0; i<6; i++) {
+		for(int i=0; i<6; i++) { //while문 쓰기
 			treeSet.add((int)(Math.random()*45)+1);
 		}
 		System.out.println("이번주 로또 번호는~!~!~! " + treeSet); //오름차순으로 정렬되어 출력

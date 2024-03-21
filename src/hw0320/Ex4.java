@@ -31,7 +31,7 @@ public class Ex4 {
 		System.out.println("그린 중학교 " +choice + "반의 학생 명단입니다.");
 		for(int i=0; i<list.get(choice-1).length; i++) { //아직 정확하게는 잘 모르겠어요.....
 			System.out.println(list.get(choice-1)[i] + " ");
-		}
+		} //get(i)
  		
 		sc.close();
 	}
